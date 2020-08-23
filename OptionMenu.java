@@ -52,7 +52,37 @@ public class OptionMenu extends Account {
 
 	/* Display account type menu with selection */
 	
-	
+private void getAccountType() {
+		
+		System.out.println("Select the account you want to access: ");
+		System.out.println("Type 1 - Chequeing account");
+		System.out.println("Type 2 - Saving account");
+		System.out.println("Type 3 - Exit");
+		System.out.print("Choice: ");
+		
+		selection = menuInput.nextInt();	
+		
+		switch (selection) {
+		case 1:
+			getChequeing();
+			break;
+			
+		case 2:
+			getSaving();
+			break;
+			
+		case 3:
+			System.out.println("Thank you for using this ATM");
+			break;
+
+		default:
+			System.out.println("\n" + "Invalid choice." + "\n");
+			break;
+		}
+		
+	}
+
+
 	
 	
 }
