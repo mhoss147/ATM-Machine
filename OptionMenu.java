@@ -82,6 +82,15 @@ private void getAccountType() {
 		
 	}
 
+	private void getChequeing() {
+		
+		System.out.println("Chequeing account: ");
+		System.out.println("Type 1 - View balance");
+		System.out.println("Type 2 - Withdraw funds");
+		System.out.println("Type 3 - Deposit funds");
+		System.out.println("Type 4 - Exit");
+		System.out.print("Choice: ");
+	}
 
 	
 	
